@@ -1,0 +1,62 @@
+#sidebar-wrapper {
+  display: none; /* Hide sidebar */
+}
+
+#page-content-wrapper {
+  width: 100%;
+}
+
+.container-admin {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.admin-add {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.admin-add:hover {
+  background-color: #0056b3;
+}
+
+.card-hotel-image img {
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+  margin-right: 10px;
+}
+
+#add-hotel-form {
+  margin-top: 20px;
+}
+
+#hotel-list {
+  margin-top: 20px;
+}
+
+@media (max-width: 767px) {
+  .container-admin {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .card-hotel-image img {
+    max-width: 100%;
+    margin-bottom: 10px;
+  }
+  .card-hotel-image{
+    display: flex;
+    flex-direction: column;
+
+  }
+}
+.card-hotel-image{
+  display: flex;
+}

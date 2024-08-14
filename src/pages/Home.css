@@ -1,0 +1,176 @@
+.homepage {
+  color: #333;
+  padding: 20px;
+}
+
+.landing {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 50px 0;
+  gap: 20px;
+}
+
+.header-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.header-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.landing h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.landing p {
+  font-size: 1.2em;
+  color: #666;
+}
+
+.header-buttons {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.btn {
+  padding: 10px 20px;
+  font-size: 1em;
+  margin: 5px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  max-width: 200px;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: white;
+}
+
+.btn-secondary {
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+.featured-hotels,
+.popular-destinations,
+.testimonials {
+  margin-bottom: 50px;
+}
+
+.featured-hotels h2,
+.popular-destinations h2,
+.testimonials h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.hotel-list,
+.destination-list,
+.testimonial-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home-hotel,
+.destination,
+.testimonial {
+  background: #f8f9fa;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  flex: 1 1 calc(100% - 40px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.hotel-image,
+.destination-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.home-hotel h3,
+.destination h3,
+.testimonial h4 {
+  margin: 10px 0;
+  text-align: center;
+}
+
+.testimonial p {
+  font-size: 1em;
+  color: #666;
+}
+
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.testimonial-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.MuiRating-iconFilled {
+  color: #f57c00; /* Change this to your desired color */
+}
+
+/* Responsive styles */
+@media (min-width: 768px) {
+  .landing {
+    flex-direction: row;
+    margin: 50px;
+    gap: 20px;
+  }
+
+  .header-text {
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .header-buttons {
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .hotel-list,
+  .destination-list,
+  .testimonial-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .home-hotel,
+  .destination,
+  .testimonial {
+    flex: 1 1 calc(50% - 40px);
+  }
+}
+
+@media (min-width: 1024px) {
+  .home-hotel,
+  .destination,
+  .testimonial {
+    flex: 1 1 calc(25% - 40px);
+  }
+}
