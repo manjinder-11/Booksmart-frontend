@@ -19,7 +19,7 @@ const UserProfile = () => {
     const fetchProfile = async () => {
       if (user && user.email) {
         try {
-          const response = await fetch(`http://localhost:5000/api/profile?email=${user.email}`);
+          const response = await fetch(`https://booksmart-backend-wvj6.onrender.com/api/profile?email=${user.email}`);
           const data = await response.json();
           setProfile(data);
         } catch (error) {
@@ -38,7 +38,7 @@ const UserProfile = () => {
 
   const handleSave = async () => {
     try {
-      const response = await fetch('http://localhost:5000/api/profile', {
+      const response = await fetch('https://booksmart-backend-wvj6.onrender.com/api/profile', {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',

@@ -22,7 +22,7 @@ const Rooms = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await axios.get(`http://localhost:5000/api/hotels/get`);
+        const res = await axios.get(`https://booksmart-backend-wvj6.onrender.com/api/hotels/get`);
         setData(res.data);
       } catch (error) {
         console.log(error);

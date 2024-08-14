@@ -35,14 +35,14 @@ const Single = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const hotelRes = await axios.get(`http://localhost:5000/api/hotels/get/${id}`);
+        const hotelRes = await axios.get(`https://booksmart-backend-wvj6.onrender.com/api/hotels/get/${id}`);
         setData(hotelRes.data);
 
-        const reviewsRes = await axios.get(`http://localhost:5000/api/reviews/${id}`);
+        const reviewsRes = await axios.get(`https://booksmart-backend-wvj6.onrender.com/api/reviews/${id}`);
         setReviews(reviewsRes.data);
 
         if (user) {
-          const bookingsRes = await axios.get(`http://localhost:5000/api/profile/${user._id}`);
+          const bookingsRes = await axios.get(`https://booksmart-backend-wvj6.onrender.com/api/profile/${user._id}`);
           setBookings(bookingsRes.data.bookings);
         }
       } catch (error) {

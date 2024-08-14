@@ -19,7 +19,7 @@ const ReviewForm = ({ user_id, hotel_id }) => {
       return;
     }
     try {
-      await axios.post("http://localhost:5000/api/reviews", {
+      await axios.post("https://booksmart-backend-wvj6.onrender.com/api/reviews", {
         user_id,
         hotel_id,
         rating: value,

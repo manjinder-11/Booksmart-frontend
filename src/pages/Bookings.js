@@ -13,7 +13,7 @@ const Bookings = () => {
     const fetchData = async () => {
       try {
         const res = await axios.get(
-          `http://localhost:5000/api/profile/${user._id}`
+          `https://booksmart-backend-wvj6.onrender.com/api/profile/${user._id}`
         );
         setData(res.data);
       } catch (error) {

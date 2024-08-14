@@ -22,7 +22,7 @@ const CheckoutButton = ({
   const handleCheckout = async () => {
     if (!price || !amount || !name || !user_id || !hotel_id) return;
     const res = await axios.post(
-      "http://localhost:5000/api/stripe/create-payment-intent",
+      "https://booksmart-backend-wvj6.onrender.com/api/stripe/create-payment-intent",
       data
     );
     setClientSecret(res.data.clientSecret);
@@ -43,7 +43,7 @@ const CheckoutButton = ({
     if (error) {
       console.error(error);
     } else if (paymentIntent.status === "succeeded") {
-      await axios.post("http://localhost:5000/api/stripe/confirm-payment", {
+      await axios.post("https://booksmart-backend-wvj6.onrender.com/api/stripe/confirm-payment", {
         paymentIntentId: paymentIntent.id,
       });
       console.log("Payment successful and booking updated!");

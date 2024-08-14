@@ -23,7 +23,7 @@ function Admin() {
   const [bookings, setBookings] = useState([]);
   const [users, setUsers] = useState([]);
 
-  const backend = "http://localhost:5000/";
+  const backend = "https://booksmart-backend-wvj6.onrender.com/";
   const [formData, setFormData] = useState({
     name: "",
     description: "",
@@ -53,7 +53,7 @@ function Admin() {
 
   const fetchHotels = async () => {
     try {
-      const response = await fetch("http://localhost:5000/api/hotels/get");
+      const response = await fetch("https://booksmart-backend-wvj6.onrender.com/api/hotels/get");
       const data = await response.json();
       setHotels(data);
     } catch (error) {
